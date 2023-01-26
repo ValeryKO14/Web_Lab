@@ -1,0 +1,167 @@
+*{
+    0:  запас;
+    0:  заполнение;
+    : рамка для определения размера коробки;
+    : семейство шрифтов system-ui, -apple-system, BlinkMacSystemFont,  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', без засечек;
+}
+
+.заголовок{
+    : гибкий дисплей;
+    :выровнять-элементы по центру;
+    : обоснование-центр контента;
+    : колонна с гибким направлением;
+    100% : ширина;
+}
+
+.iteam-логотип{
+    : гибкий дисплей;
+    :выровнять-элементы по центру;
+    : обоснование-центр контента;
+    : шрифт - жирный;
+    : цвет фона - Гейнсборо;
+    95% : ширина;
+    50 пикселей : высота;
+    12 пикселей : поля;
+}
+
+.категория{
+    : гибкий дисплей;
+    width: 95%;
+    margin: 0px 12px 0 12px;
+}
+
+.category-a{
+    color: black;
+    font-weight: 500;
+}
+.category-a:first-child{
+    margin-right: 45px;
+}
+.category-a:hover{
+    text-decoration: none;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content{
+    height: 500px;
+}
+
+.Katalog{
+    width: 100%;
+    margin: 12px;
+}
+
+.Katalog h1{
+    font-size: 22px;
+}
+
+.iteam-list{
+    max-width: 100%;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.iteam-list:last-child{
+    margin-bottom: 20px;
+}
+
+.iteam-list img{
+    width: 100%;
+}
+
+.iteam-list div,span {
+    margin-top: 15px;
+}
+
+.iteam-list:hover{
+    opacity: .4;
+}
+
+.btn-block{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    padding: 24px;
+}
+.btn-block button{
+    height: 60px;
+    font-size: 20px;
+    background-color: beige;
+    border: none;
+    box-shadow: inset;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (min-width:1280px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        flex-direction: unset;
+        min-width: 1280px;
+    }
+
+ .iteam-логотип{
+        : гибкий дисплей;
+        :выровнять-элементы по центру;
+        : обоснование-центр контента;
+        : шрифт - жирный;
+        : цвет фона - Гейнсборо;
+        300 пикселей : ширина;
+        50 пикселей : высота;
+        0:  запас;
+    }
+
+ .категория{
+        :подгонка по ширине-содержимое;
+    }
+
+ .Каталог-список{
+        : гибкий дисплей;
+        : гибкая обертка;
+        : обоснование-центр контента;
+    }
+
+ .Каталог  h1{
+        28 пикселей : размер шрифта;
+        33 пикселя : поле слева;
+    }
+
+ .iteam-список{
+        0 0  24 px  24 px :  поля;
+        380 пикселей : максимальная ширина;
+    }
+
+ .iteam-список: n-й дочерний элемент (3 n+3){
+        0:  правое поле;
+        0:  нижняя граница;
+    }
+ .iteam-список  изображений{
+        380 пикселей : ширина;
+    }
+ .btn-блок{
+        :выровнять-элементы по центру;
+    }
+
+ .btn-кнопка блокировки {
+        200 пикселей : ширина;
+    }
+}
+
+@медиа-экран и (минимальная ширина: 1600 пикселей) {
+ .iteam-список{
+        500 пикселей : максимальная ширина;
+    }
+    
+ .iteam-список  изображений{
+        500 пикселей : ширина;
+    }
+}
